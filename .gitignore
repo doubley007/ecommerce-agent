@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# 环境变量与密钥
+.env
+.env.*
+!.env.example
+
+# 向量库本地数据
+server/chroma_db/
+server/.chroma/
+
+# 大数据集（保留 jsonl 规整后的数据，原始素材体积大可重新解压）
+data/raw/
+
+# Android
+client/.gradle/
+client/build/
+client/**/build/
+client/local.properties
+client/.idea/
+client/captures/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# macOS
+.DS_Store

@@ -1,0 +1,30 @@
+{"id": "q01", "category": "直推", "query": "推荐一款适合油皮的洗面奶", "expected": "recommend", "gold_ids": ["p_beauty_011"], "checks": {"min_tags": 1}}
+{"id": "q02", "category": "直推", "query": "想买一款好喝的速溶咖啡", "expected": "recommend", "gold_ids": ["p_food_001", "p_food_002", "p_food_022", "p_food_023"], "checks": {"min_tags": 1}}
+{"id": "q03", "category": "直推", "query": "推荐一双跑鞋日常训练用", "expected": "recommend", "gold_ids": ["p_clothes_007", "p_clothes_010"], "checks": {"min_tags": 1}}
+{"id": "q04", "category": "直推", "query": "想要一款防晒霜，户外用", "expected": "recommend", "gold_ids": ["p_beauty_006", "p_beauty_010", "p_beauty_023"], "checks": {"min_tags": 1}}
+{"id": "q05", "category": "直推", "query": "敏感肌可以用的面霜", "expected": "recommend", "gold_ids": ["p_beauty_007", "p_beauty_012"], "checks": {"min_tags": 1}}
+{"id": "q06", "category": "价格约束", "query": "推荐一双跑鞋，预算1000以内", "expected": "recommend", "gold_ids": ["p_clothes_007", "p_clothes_010"], "checks": {"min_tags": 1, "max_price": 1000}}
+{"id": "q07", "category": "价格约束", "query": "想要一台拍照好的旗舰手机，预算5000以内", "expected": "recommend", "gold_ids": ["p_digital_016"], "checks": {"min_tags": 1, "max_price": 5000}}
+{"id": "q08", "category": "价格约束", "query": "300元以下的咖啡推荐", "expected": "recommend", "gold_ids": ["p_food_001", "p_food_002", "p_food_022", "p_food_023"], "checks": {"min_tags": 1, "max_price": 300}}
+{"id": "q09", "category": "价格约束", "query": "推荐一台500以内的笔记本电脑", "expected": "refuse", "gold_ids": []}
+{"id": "q10", "category": "价格约束", "query": "200元以下的蓝牙耳机", "expected": "refuse", "gold_ids": []}
+{"id": "q11", "category": "价格约束", "query": "推荐一款100块以内的笔记本电脑", "expected": "refuse", "gold_ids": []}
+{"id": "q12", "category": "否定约束", "query": "推荐保湿面霜，但我不要日系品牌", "expected": "recommend", "gold_ids": ["p_beauty_007", "p_beauty_008", "p_beauty_012"], "checks": {"min_tags": 1, "brand_not_in": ["资生堂", "SK-II", "雪肌精", "Curel"]}}
+{"id": "q13", "category": "否定约束", "query": "想买跑鞋，不要耐克和阿迪", "expected": "recommend", "gold_ids": ["p_clothes_010"], "checks": {"min_tags": 1, "brand_not_in": ["耐克", "阿迪达斯", "Nike", "adidas"]}}
+{"id": "q14", "category": "否定约束", "query": "推荐一款洗面奶，不要含酒精", "expected": "recommend", "gold_ids": ["p_beauty_011"], "checks": {"min_tags": 1}}
+{"id": "q15", "category": "否定约束", "query": "防晒霜推荐，但是我不要油腻的", "expected": "recommend", "gold_ids": ["p_beauty_006", "p_beauty_023"], "checks": {"min_tags": 1}}
+{"id": "q16", "category": "多约束", "query": "1500元以内的真无线耳机，要主动降噪", "expected": "recommend", "gold_ids": ["p_digital_007"], "checks": {"min_tags": 1, "max_price": 1500}}
+{"id": "q17", "category": "多约束", "query": "想要一双国产品牌的跑鞋，预算1500以内", "expected": "recommend", "gold_ids": ["p_clothes_010"], "checks": {"min_tags": 1, "max_price": 1500, "brand_in": ["特步", "李宁", "安踏", "鸿星尔克"]}}
+{"id": "q18", "category": "多约束", "query": "300元以内的精华液，敏感肌可以用", "expected": "recommend", "gold_ids": ["p_beauty_007"], "checks": {"min_tags": 1, "max_price": 300}}
+{"id": "q19", "category": "多约束", "query": "便携的笔记本电脑，预算8000以内，不要苹果", "expected": "recommend", "gold_ids": ["p_digital_004", "p_digital_023"], "checks": {"min_tags": 1, "max_price": 8000, "brand_not_in": ["Apple 苹果", "Apple", "苹果"]}}
+{"id": "q20", "category": "多约束", "query": "想买华为手机，预算8000以内", "expected": "recommend", "gold_ids": ["p_digital_002"], "checks": {"min_tags": 1, "max_price": 8000, "brand_in": ["华为"]}}
+{"id": "q21", "category": "稀缺拒答", "query": "推荐一台游戏机", "expected": "refuse", "gold_ids": []}
+{"id": "q22", "category": "稀缺拒答", "query": "想买一支口红，资生堂的", "expected": "refuse", "gold_ids": []}
+{"id": "q23", "category": "稀缺拒答", "query": "10元以内的化妆水", "expected": "refuse", "gold_ids": []}
+{"id": "q24", "category": "稀缺拒答", "query": "推荐一款洗碗机", "expected": "refuse", "gold_ids": []}
+{"id": "q25", "category": "稀缺拒答", "query": "推荐一款适合婴儿的奶粉", "expected": "refuse", "gold_ids": []}
+{"id": "q26", "category": "模糊追问", "query": "想买双鞋", "expected": "ask_back", "gold_ids": []}
+{"id": "q27", "category": "模糊追问", "query": "推荐个化妆品", "expected": "ask_back", "gold_ids": []}
+{"id": "q28", "category": "模糊追问", "query": "买点零食", "expected": "ask_back", "gold_ids": []}
+{"id": "q29", "category": "模糊追问", "query": "想要个数码产品", "expected": "ask_back", "gold_ids": []}
+{"id": "q30", "category": "模糊追问", "query": "想要一台 iPad", "expected": "ask_back", "gold_ids": []}
