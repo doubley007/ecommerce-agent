@@ -224,7 +224,7 @@ python run_eval.py
 
 ---
 
-## 🧱 RAG chunk 设计（答辩要点）
+## 🧱 RAG chunk 设计
 
 商品不同信息块召回价值不同，分别切分以保证特定查询直命中：
 
